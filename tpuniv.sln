@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matchmaking", "Matchmaking\Matchmaking.vcxproj", "{5EDB4107-A971-44D3-86C3-57F8FC54DF15}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C0DBC330-5827-4DC7-BFC4-621AED444FAC} = {C0DBC330-5827-4DC7-BFC4-621AED444FAC}
@@ -24,27 +24,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcx
 	EndProjectSection
 EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 6
-		SccProjectName0 = Perforce\u0020Project
-		SccLocalPath0 = .
-		SccProvider0 = MSSCCI:Perforce\u0020SCM
-		SccProjectUniqueName1 = Matchmaking\\Matchmaking.vcxproj
-		SccLocalPath1 = .
-		SccProjectFilePathRelativizedFromConnection1 = Matchmaking\\
-		SccProjectUniqueName2 = Session\\Session.vcxproj
-		SccLocalPath2 = .
-		SccProjectFilePathRelativizedFromConnection2 = Session\\
-		SccProjectUniqueName3 = Shared\\Shared.vcxproj
-		SccLocalPath3 = .
-		SccProjectFilePathRelativizedFromConnection3 = Shared\\
-		SccProjectUniqueName4 = Broker\\Broker.vcxproj
-		SccLocalPath4 = .
-		SccProjectFilePathRelativizedFromConnection4 = Broker\\
-		SccProjectUniqueName5 = Client\\Client.vcxproj
-		SccLocalPath5 = .
-		SccProjectFilePathRelativizedFromConnection5 = Client\\
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32

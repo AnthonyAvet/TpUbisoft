@@ -1,50 +1,56 @@
-﻿  world.cpp
-  ressourcemanager.cpp
-  player.cpp
-  main.cpp
-  explosion.cpp
-  engine.cpp
-  bomb.cpp
-  animator.cpp
-  Generating Code...
-  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
-sfml-system-s-d.lib(Clock.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(Clock.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-system-s-d.pdb'; linking object as if no debug info
-sfml-system-s-d.lib(Err.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(Err.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-system-s-d.pdb'; linking object as if no debug info
-sfml-system-s-d.lib(Lock.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(Lock.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-system-s-d.pdb'; linking object as if no debug info
-sfml-system-s-d.lib(Mutex.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(Mutex.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-system-s-d.pdb'; linking object as if no debug info
-sfml-system-s-d.lib(Sleep.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(Sleep.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-system-s-d.pdb'; linking object as if no debug info
-sfml-system-s-d.lib(String.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(String.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-system-s-d.pdb'; linking object as if no debug info
-sfml-system-s-d.lib(ThreadLocal.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(ThreadLocal.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-system-s-d.pdb'; linking object as if no debug info
-sfml-system-s-d.lib(Time.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(Time.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-system-s-d.pdb'; linking object as if no debug info
-sfml-system-s-d.lib(ClockImpl.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(ClockImpl.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-system-s-d.pdb'; linking object as if no debug info
-sfml-system-s-d.lib(MutexImpl.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(MutexImpl.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-system-s-d.pdb'; linking object as if no debug info
-sfml-system-s-d.lib(SleepImpl.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(SleepImpl.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-system-s-d.pdb'; linking object as if no debug info
-sfml-system-s-d.lib(ThreadLocalImpl.cpp.obj) : warning LNK4099: PDB 'sfml-system-s-d.pdb' was not found with 'sfml-system-s-d.lib(ThreadLocalImpl.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-system-s-d.pdb'; linking object as if no debug info
-sfml-window-s-d.lib(GlContext.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(GlContext.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-window-s-d.pdb'; linking object as if no debug info
-sfml-window-s-d.lib(GlResource.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(GlResource.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-window-s-d.pdb'; linking object as if no debug info
-sfml-window-s-d.lib(JoystickManager.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(JoystickManager.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-window-s-d.pdb'; linking object as if no debug info
-sfml-window-s-d.lib(Keyboard.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(Keyboard.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-window-s-d.pdb'; linking object as if no debug info
-sfml-window-s-d.lib(VideoMode.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(VideoMode.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-window-s-d.pdb'; linking object as if no debug info
-sfml-window-s-d.lib(Window.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(Window.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-window-s-d.pdb'; linking object as if no debug info
-sfml-window-s-d.lib(WindowImpl.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(WindowImpl.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-window-s-d.pdb'; linking object as if no debug info
-sfml-window-s-d.lib(WglContext.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(WglContext.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-window-s-d.pdb'; linking object as if no debug info
-sfml-window-s-d.lib(InputImpl.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(InputImpl.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-window-s-d.pdb'; linking object as if no debug info
-sfml-window-s-d.lib(JoystickImpl.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(JoystickImpl.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-window-s-d.pdb'; linking object as if no debug info
-sfml-window-s-d.lib(VideoModeImpl.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(VideoModeImpl.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-window-s-d.pdb'; linking object as if no debug info
-sfml-window-s-d.lib(WindowImplWin32.cpp.obj) : warning LNK4099: PDB 'sfml-window-s-d.pdb' was not found with 'sfml-window-s-d.lib(WindowImplWin32.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-window-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(Color.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Color.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(GLCheck.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(GLCheck.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(Image.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Image.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(ImageLoader.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(ImageLoader.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(RenderStates.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(RenderStates.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(RenderTarget.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(RenderTarget.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(RenderWindow.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(RenderWindow.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(Shader.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Shader.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(Texture.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Texture.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(TextureSaver.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(TextureSaver.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(Transform.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Transform.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(Transformable.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Transformable.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(View.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(View.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(Vertex.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Vertex.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-sfml-graphics-s-d.lib(Sprite.cpp.obj) : warning LNK4099: PDB 'sfml-graphics-s-d.pdb' was not found with 'sfml-graphics-s-d.lib(Sprite.cpp.obj)' or at 'D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\bin\Win32\Debug\sfml-graphics-s-d.pdb'; linking object as if no debug info
-  Client.vcxproj -> D:\DepotHermes\playgrounds\UnivSavoie\code\tpuniv_layout\Client\..\bin\Win32\Debug\Client.exe
+﻿La génération a démarré 29/01/2014 15:01:27.
+     1>Projet "C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Client\Client.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\Win32\Debug\Client.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\extern\SFML\lib\ "sfml-system-s-d.lib" "sfml-window-s-d.lib" "sfml-graphics-s-d.lib" ..\bin\Win32\Debug\Shared.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\bin\Win32\Debug\Client.pdb" /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\bin\Win32\Debug\Client.lib" /MACHINE:X86 Debug\animator.obj
+         Debug\bomb.obj
+         Debug\engine.obj
+         Debug\explosion.obj
+         Debug\main.obj
+         Debug\player.obj
+         Debug\ressourcemanager.obj
+         Debug\world.obj
+     1>LINK : warning LNK4075: ' /INCREMENTAL' ignoré à cause de la spécification '/LTCG'
+     1>animator.obj : warning LNK4075: ' /EDITANDCONTINUE' ignoré à cause de la spécification '/OPT:LBR'
+     1>sfml-system-s-d.lib(String.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-window-s-d.lib(VideoMode.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-window-s-d.lib(Window.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-window-s-d.lib(InputImpl.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-window-s-d.lib(VideoModeImpl.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-window-s-d.lib(GlContext.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-window-s-d.lib(WindowImpl.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-window-s-d.lib(WglContext.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-window-s-d.lib(WindowImplWin32.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-window-s-d.lib(JoystickManager.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-window-s-d.lib(JoystickImpl.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(Texture.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(Transformable.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(Sprite.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(RenderTarget.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(RenderStates.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(RenderWindow.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(Color.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(GLCheck.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(TextureSaver.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(Image.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(Transform.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(View.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(Shader.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-graphics-s-d.lib(ImageLoader.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-system-s-d.lib(Err.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-system-s-d.lib(ThreadLocal.cpp.obj) : error LNK2038: discordance détectée pour '_MSC_VER' : la valeur '1600' ne correspond pas à la valeur '1700' in animator.obj
+     1>sfml-system-s-d.lib(String.cpp.obj) : error LNK2001: symbole externe non résolu "__declspec(dllimport) public: void __thiscall std::locale::facet::_Incref(void)" (__imp_?_Incref@facet@locale@std@@QAEXXZ)
+     1>sfml-window-s-d.lib(WindowImplWin32.cpp.obj) : error LNK2001: symbole externe non résolu "__declspec(dllimport) public: void __thiscall std::locale::facet::_Incref(void)" (__imp_?_Incref@facet@locale@std@@QAEXXZ)
+     1>sfml-graphics-s-d.lib(Shader.cpp.obj) : error LNK2001: symbole externe non résolu "__declspec(dllimport) public: void __thiscall std::locale::facet::_Incref(void)" (__imp_?_Incref@facet@locale@std@@QAEXXZ)
+     1>sfml-system-s-d.lib(String.cpp.obj) : error LNK2001: symbole externe non résolu "__declspec(dllimport) private: static class std::locale::_Locimp * __cdecl std::locale::_Init(void)" (__imp_?_Init@locale@std@@CAPAV_Locimp@12@XZ)
+     1>sfml-window-s-d.lib(WindowImplWin32.cpp.obj) : error LNK2001: symbole externe non résolu "__declspec(dllimport) private: static class std::locale::_Locimp * __cdecl std::locale::_Init(void)" (__imp_?_Init@locale@std@@CAPAV_Locimp@12@XZ)
+     1>sfml-system-s-d.lib(String.cpp.obj) : error LNK2001: symbole externe non résolu "__declspec(dllimport) public: class std::locale::facet * __thiscall std::locale::facet::_Decref(void)" (__imp_?_Decref@facet@locale@std@@QAEPAV123@XZ)
+     1>sfml-window-s-d.lib(WindowImplWin32.cpp.obj) : error LNK2001: symbole externe non résolu "__declspec(dllimport) public: class std::locale::facet * __thiscall std::locale::facet::_Decref(void)" (__imp_?_Decref@facet@locale@std@@QAEPAV123@XZ)
+     1>sfml-graphics-s-d.lib(Shader.cpp.obj) : error LNK2001: symbole externe non résolu "__declspec(dllimport) public: class std::locale::facet * __thiscall std::locale::facet::_Decref(void)" (__imp_?_Decref@facet@locale@std@@QAEPAV123@XZ)
+     1>sfml-system-s-d.lib(String.cpp.obj) : error LNK2001: symbole externe non résolu "private: static void __cdecl std::locale::facet::_Facet_Register(class std::locale::facet *)" (?_Facet_Register@facet@locale@std@@CAXPAV123@@Z)
+     1>sfml-graphics-s-d.lib(Shader.cpp.obj) : error LNK2001: symbole externe non résolu "private: static void __cdecl std::locale::facet::_Facet_Register(class std::locale::facet *)" (?_Facet_Register@facet@locale@std@@CAXPAV123@@Z)
+     1>..\bin\Win32\Debug\Client.exe : fatal error LNK1120: 4 externes non résolus
+     1>Génération du projet "C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Client\Client.vcxproj" terminée (Build cible(s)) -- ÉCHEC.
+
+ÉCHEC de la build.
+
+Temps écoulé 00:00:00.20
