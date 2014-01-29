@@ -1,4 +1,4 @@
-﻿La génération a démarré 29/01/2014 15:01:27.
+﻿La génération a démarré 29/01/2014 15:07:26.
      1>Projet "C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Client\Client.vcxproj" sur le nœud 2 (Build cible(s)).
      1>Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\Win32\Debug\Client.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\extern\SFML\lib\ "sfml-system-s-d.lib" "sfml-window-s-d.lib" "sfml-graphics-s-d.lib" ..\bin\Win32\Debug\Shared.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\bin\Win32\Debug\Client.pdb" /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\bin\Win32\Debug\Client.lib" /MACHINE:X86 Debug\animator.obj
@@ -53,4 +53,4 @@
 
 ÉCHEC de la build.
 
-Temps écoulé 00:00:00.20
+Temps écoulé 00:00:00.16
