@@ -14,19 +14,22 @@ int main(void)
 
 	*ser << 'A';
 	*ser << (int)16;
+	*ser << (short)160;
 	*ser << 'C';
 
 	char testChar;
 	int	 testint;
+	short testshort;
 	char testChar1;
 
 	ser->resetIndex();
 
 	*ser >> testChar;
 	*ser >> (int)testint;
+	*ser >> (short)testshort;
 	*ser >> testChar1;
 
-	printf ("Characters: %c %d %c \n", testChar, testint, testChar1);
+	printf ("Characters: %c %d %c %d\n", testChar, testint, testChar1, testshort);
 
 	system("PAUSE");
 
