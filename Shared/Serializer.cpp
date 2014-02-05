@@ -96,14 +96,13 @@ namespace Shared
 		}
 	}
 
-	/*void Serializer::operator << (const Serializer& val_in){
-		char inter;
-		for(int i=0;i<val_in._bufferSize<i++)
-		{
-			val_in >> inter >> _buffer[_cursor];
-			_cursor++;
-		}
-	}*/
+	void Serializer::operator << (const Serializer& val_in){
+		for (size_t i = 0 ; i < val_in._bufferSize ; ++i)
+			{
+				_buffer[_cursor++] = val_in._buffer[i];
+			}
+			_bufferSize += val_in._bufferSize;
+	}
 
 	void Serializer::operator >> (char &val_out){
 		if(_cursor <= _bufferSize)
@@ -195,10 +194,9 @@ namespace Shared
 		}
 	}
 	
-	/*void Serializer::operator >> (Serializer& val_out){
-			_cursor--;
-			val_out = _buffer[_cursor];
-	}*/
+	void Serializer::operator >> (Serializer& val_out){
+			val_out << *this;
+	}
 
 	bool Serializer::isBigIndian()
 	{
