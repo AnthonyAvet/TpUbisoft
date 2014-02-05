@@ -31,9 +31,13 @@
     <ClInclude Include="NetPeer.h" />
     <ClInclude Include="NetSocket.h" />
     <ClInclude Include="NetworkManager.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Serializable.h" />
     <ClInclude Include="Serializer.h" />
     <ClInclude Include="StringId.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Shared.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C0DBC330-5827-4DC7-BFC4-621AED444FAC}</ProjectGuid>

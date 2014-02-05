@@ -4,12 +4,14 @@
 
 #include "Broker.h"
 #include "NetPeer.h"
+#include "NetSocket.h"
+#include "Msg.h"
 #include "Serializer.h"
 
 int main(void)
 {
 	//Shared::NetPeer();
-
+	/*
 	Shared::Serializer* ser = new Shared::Serializer(56);
 
 	*ser << 'A';
@@ -30,6 +32,15 @@ int main(void)
 	*ser >> testChar1;
 
 	printf ("Characters: %c %d %c %d\n", testChar, testint, testChar1, testshort);
+
+	system("PAUSE");*/
+	Shared::NetSocket* sock = new Shared::NetSocket();
+	sock->Bind(4242);
+	Shared::NetPeer* net = new Shared::NetPeer("10.7.244.201", 21);
+	Shared::Msg* msg = new Shared::Msg();
+	sock->Send(*net, *msg);
+
+	//sock->Read(*net, *msg);
 
 	system("PAUSE");
 

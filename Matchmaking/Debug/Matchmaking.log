@@ -1,11 +1,11 @@
-﻿La génération a démarré 03/02/2014 12:58:01.
+﻿La génération a démarré 05/02/2014 16:16:54.
      1>Projet "C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Matchmaking\Matchmaking.vcxproj" sur le nœud 2 (Build cible(s)).
      1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\Win32\Debug\Matchmaking.exe" /INCREMENTAL /NOLOGO ..\bin\Win32\Debug\Shared.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\bin\Win32\Debug\Matchmaking.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\bin\Win32\Debug\Matchmaking.lib" /MACHINE:X86 Debug\main.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\Win32\Debug\Matchmaking.exe" /INCREMENTAL /NOLOGO ..\bin\Win32\Debug\Shared.lib Ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\bin\Win32\Debug\Matchmaking.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\bin\Win32\Debug\Matchmaking.lib" /MACHINE:X86 Debug\main.obj
          Debug\MatchMaking.obj
          Matchmaking.vcxproj -> C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Matchmaking\..\bin\Win32\Debug\Matchmaking.exe
      1>Génération du projet "C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Matchmaking\Matchmaking.vcxproj" terminée (Build cible(s)).
 
 La génération a réussi.
 
-Temps écoulé 00:00:00.34
+Temps écoulé 00:00:00.37

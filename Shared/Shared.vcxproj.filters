@@ -24,5 +24,9 @@
     <ClInclude Include="Msg.h" />
     <ClInclude Include="StringId.h" />
     <ClInclude Include="CommonTime.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Shared.rc" />
   </ItemGroup>
 </Project>

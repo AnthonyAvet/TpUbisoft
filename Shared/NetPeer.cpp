@@ -4,25 +4,60 @@
 
 namespace Shared
 {
-	/*
-	Shared::NetPeer()
+	
+	NetPeer::NetPeer()
 	{
 
 	}
-	Shared::NetPeer(unsigned int  ip_in, unsigned short port_in)
+	NetPeer::NetPeer(unsigned int  ip_in, unsigned short port_in)
 	{
-
+		m_IpAddress = ip_in;
+		m_PortNumber = port_in;
 	}
-	Shared::NetPeer(const char* hostname_in,  unsigned short port_in){}
-	Shared::NetPeer(const NetPeer &other){}
+	NetPeer::NetPeer(const char* hostname_in,  unsigned short port_in)
+	{
+		m_IpAddress = inet_addr(hostname_in);
+		m_PortNumber = port_in;
+	}
+	NetPeer::NetPeer(const NetPeer &other)
+	{
+		m_IpAddress = other.m_IpAddress;
+		m_PortNumber = other.m_PortNumber;
+	}
 
-	unsigned int		Shared::GetIPAddress(){}
-	unsigned short		Shared::GetPortNumber(){}
-	void				Shared::SetIPAddress(unsigned int ipaddress){}
-	void				Shared::SetPortNumber(unsigned short port){}
+	unsigned int		NetPeer::GetIPAddress() const
+	{
+		return m_IpAddress;
+	}
+	unsigned short		NetPeer::GetPortNumber() const
+	{
+		return m_PortNumber;
+	}
+	void				NetPeer::SetIPAddress(unsigned int ipaddress)
+	{
+		m_IpAddress = ipaddress;
+	}
+	void				NetPeer::SetPortNumber(unsigned short port)
+	{
+		m_PortNumber = port;
+	}
 
-	bool				Shared::IsValid() const{}
+	bool				NetPeer::IsValid() const
+	{
+		return false;
+	}
 
-	NetPeer &			Shared::operator=(const NetPeer& other){}
-	bool				Shared::operator==(const NetPeer& other){}*/
+	NetPeer &			NetPeer::operator=(const NetPeer& other)
+	{
+		m_IpAddress = other.m_IpAddress;
+		m_PortNumber = other.m_PortNumber;
+
+		return *this;
+	}
+	bool				NetPeer::operator==(const NetPeer& other)
+	{
+		if(m_IpAddress == other.m_IpAddress && m_PortNumber == other.m_PortNumber)
+			return true;
+		return false;
+	}
 } //namespace Shared
