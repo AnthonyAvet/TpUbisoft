@@ -8,7 +8,7 @@ namespace Shared
 	Serializer::Serializer(const char* pbuffer_in, size_t buffer_size_in){
 		_bufferSize = buffer_size_in;
 		_cursor = 0;
-		*_buffer = *pbuffer_in;
+		_buffer = (char*)pbuffer_in;
 	}
 
 	// Pre-allocate a dynamic buffer
@@ -202,7 +202,7 @@ namespace Shared
 	{
 		int test = 0xA1256;
 		unsigned char* p = (unsigned char*) &test;
-		return p[0] != 0xA1;
+		return p[0] == 0xA1;
 	}
 
 	void Serializer::resetIndex()

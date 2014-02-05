@@ -45,6 +45,8 @@ namespace Shared
 		void operator >> (netU32 &val_out);
 		void operator >> (Serializer & val_out);
 
+		int getBufferSize() {return _cursor;} ;
+
 	protected:
 		char* _buffer;
 		size_t _bufferSize;

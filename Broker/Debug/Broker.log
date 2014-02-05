@@ -1,13 +1,11 @@
-﻿La génération a démarré 05/02/2014 17:42:29.
+﻿La génération a démarré 05/02/2014 18:48:41.
      1>Projet "C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Broker\Broker.vcxproj" sur le nœud 2 (Build cible(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\Shared /ZI /nologo /W4 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\Shared /ZI /nologo /W4 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Broker.cpp main.cpp
          main.cpp
-     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\broker\main.cpp(44): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : voir la déclaration de 'strcpy'
-     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\broker\main.cpp(50): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : voir la déclaration de 'strcpy'
-     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\broker\main.cpp(41): warning C4189: 'ser' : variable locale initialisée mais non référencée
+         Génération de code en cours...
+         Ignoré... (aucune modification pertinente détectée)
+         Broker.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\Win32\Debug\Broker.exe" /INCREMENTAL /NOLOGO ..\bin\Win32\Debug\Shared.lib Ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\bin\Win32\Debug\Broker.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\bin\Win32\Debug\Broker.lib" /MACHINE:X86 Debug\Broker.obj
          Debug\main.obj
@@ -16,4 +14,4 @@
 
 La génération a réussi.
 
-Temps écoulé 00:00:01.22
+Temps écoulé 00:00:01.21

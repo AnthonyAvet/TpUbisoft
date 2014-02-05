@@ -1,10 +1,11 @@
-﻿La génération a démarré 05/02/2014 17:36:06.
+﻿La génération a démarré 05/02/2014 18:48:40.
      1>Projet "C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Shared\Shared.vcxproj" sur le nœud 2 (Build cible(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt NetSocket.cpp
-         NetSocket.cpp
-     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\netsocket.cpp(36): warning C4127: l'expression conditionnelle est une constante
-     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\netsocket.cpp(51): warning C4127: l'expression conditionnelle est une constante
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GenericRPC.cpp NetworkManager.cpp
+         NetworkManager.cpp
+         Génération de code en cours...
+         Ignoré... (aucune modification pertinente détectée)
+         GenericRPC.cpp
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"..\bin\Win32\Debug\Shared.lib" /NOLOGO Debug\Shared.res
          Debug\CommonTime.obj
@@ -25,4 +26,4 @@
 
 La génération a réussi.
 
-Temps écoulé 00:00:00.87
+Temps écoulé 00:00:00.90

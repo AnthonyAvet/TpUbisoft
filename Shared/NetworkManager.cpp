@@ -7,6 +7,8 @@ namespace Shared
 	{
 		m_broker = brokerPeer_in;
 		m_listening_port = listen_port_in;
+
+		this->Init();
 	}
 
 	NetworkManager::~NetworkManager()
@@ -25,7 +27,7 @@ namespace Shared
 	}
 	bool	NetworkManager::Term()
 	{
-		return false;
+		return m_socket.Close();
 	}
 	
 	unsigned short	NetworkManager::GetListenPort() const
