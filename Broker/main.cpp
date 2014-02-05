@@ -10,15 +10,10 @@
 
 int main(void)
 {
-	//Shared::NetPeer();
+
+	WSADATA data;
+	WSAStartup(MAKEWORD(2,2), &data);
 	/*
-	Shared::Serializer* ser = new Shared::Serializer(56);
-
-	*ser << 'A';
-	*ser << (int)16;
-	*ser << (short)160;
-	*ser << 'C';
-
 	char testChar;
 	int	 testint;
 	short testshort;
@@ -35,12 +30,30 @@ int main(void)
 
 	system("PAUSE");*/
 	Shared::NetSocket* sock = new Shared::NetSocket();
-	sock->Bind(4242);
-	Shared::NetPeer* net = new Shared::NetPeer("10.7.244.201", 21);
-	Shared::Msg* msg = new Shared::Msg();
-	sock->Send(*net, *msg);
+	bool retour = sock->Bind(4242);
 
-	//sock->Read(*net, *msg);
+	printf("retour bind vaut: %d\n",retour);
+
+	Shared::NetPeer* net = new Shared::NetPeer("127.0.0.1", 4242);
+	Shared::NetPeer* netIn = new Shared::NetPeer();
+	Shared::Msg* msg = new Shared::Msg();
+
+	Shared::Serializer* ser = new Shared::Serializer(56);
+
+	char * buf = msg->GetBuffer();
+	strcpy(buf, "Helllo");
+	msg->SetBufferSize(5);
+
+	retour = sock->Send(*net, *msg);
+	printf("retour send vaut: %d\n",retour);
+	
+	strcpy(buf, "");
+	msg->SetBufferSize(0);
+
+	retour = sock->Read(*netIn, *msg);
+	printf("retour read vaut: %d\n",retour);
+
+	printf("message : %s\n", buf);
 
 	system("PAUSE");
 
