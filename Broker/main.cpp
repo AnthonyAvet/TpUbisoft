@@ -94,6 +94,8 @@ int main(void)
 	retour = sock->Read(*netIn, *msgReception);
 	printf("retour read vaut: %d\n",retour);
 
+	serRetour->resetIndex();
+
 	*serRetour >> retourChar[0];
 	*serRetour >> retourChar[1];
 	*serRetour >> (int) val;
