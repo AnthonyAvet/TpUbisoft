@@ -60,7 +60,7 @@ namespace Shared
 			}
 		}
 	}
-
+	
 	void Serializer::operator << (netS32 val_in){
 		if(_cursor+4<_bufferSize){
 			char* tab = (char*) &val_in;
@@ -88,6 +88,56 @@ namespace Shared
 				_buffer[_cursor++] = tab[2];
 				_buffer[_cursor++] = tab[3];
 			}else{
+				_buffer[_cursor++] = tab[3];
+				_buffer[_cursor++] = tab[2];
+				_buffer[_cursor++] = tab[1];
+				_buffer[_cursor++] = tab[0];
+			}
+		}
+	}
+	void Serializer::operator << (netS64 val_in){
+		if(_cursor+8<_bufferSize){
+			char* tab = (char*) &val_in;
+			if(isBigIndian())
+			{
+				_buffer[_cursor++] = tab[0];
+				_buffer[_cursor++] = tab[1];
+				_buffer[_cursor++] = tab[2];
+				_buffer[_cursor++] = tab[3];
+				_buffer[_cursor++] = tab[4];
+				_buffer[_cursor++] = tab[5];
+				_buffer[_cursor++] = tab[6];
+				_buffer[_cursor++] = tab[7];
+			}else{
+				_buffer[_cursor++] = tab[7];
+				_buffer[_cursor++] = tab[6];
+				_buffer[_cursor++] = tab[5];
+				_buffer[_cursor++] = tab[4];
+				_buffer[_cursor++] = tab[3];
+				_buffer[_cursor++] = tab[2];
+				_buffer[_cursor++] = tab[1];
+				_buffer[_cursor++] = tab[0];
+			}
+		}
+	}
+	void Serializer::operator << (netU64 val_in){
+		if(_cursor+8<_bufferSize){
+			char* tab = (char*) &val_in;
+			if(isBigIndian())
+			{
+				_buffer[_cursor++] = tab[0];
+				_buffer[_cursor++] = tab[1];
+				_buffer[_cursor++] = tab[2];
+				_buffer[_cursor++] = tab[3];
+				_buffer[_cursor++] = tab[4];
+				_buffer[_cursor++] = tab[5];
+				_buffer[_cursor++] = tab[6];
+				_buffer[_cursor++] = tab[7];
+			}else{
+				_buffer[_cursor++] = tab[7];
+				_buffer[_cursor++] = tab[6];
+				_buffer[_cursor++] = tab[5];
+				_buffer[_cursor++] = tab[4];
 				_buffer[_cursor++] = tab[3];
 				_buffer[_cursor++] = tab[2];
 				_buffer[_cursor++] = tab[1];
@@ -154,7 +204,7 @@ namespace Shared
 			}
 		}
 	}
-
+	
 	void Serializer::operator >> (netS32 & val_out){
 		if(_cursor+4<=_bufferSize){
 			char* tab = (char*) &val_out;
@@ -186,6 +236,60 @@ namespace Shared
 				tab[2] = _buffer[_cursor++];
 				tab[3] = _buffer[_cursor++];
 			}else{
+				tab[3] = _buffer[_cursor++];
+				tab[2] = _buffer[_cursor++];
+				tab[1] = _buffer[_cursor++];
+				tab[0] = _buffer[_cursor++];
+			}
+		}
+	}
+	void Serializer::operator >> (netS64 & val_out){
+		if(_cursor+8<=_bufferSize){
+			char* tab = (char*) &val_out;
+			if(isBigIndian())
+			{
+				tab[0] = _buffer[_cursor++];
+				tab[1] = _buffer[_cursor++];
+				tab[2] = _buffer[_cursor++];
+				tab[3] = _buffer[_cursor++];
+				tab[4] = _buffer[_cursor++];
+				tab[5] = _buffer[_cursor++];
+				tab[6] = _buffer[_cursor++];
+				tab[7] = _buffer[_cursor++];
+			}else{
+				tab[7] = _buffer[_cursor++];
+				tab[6] = _buffer[_cursor++];
+				tab[5] = _buffer[_cursor++];
+				tab[4] = _buffer[_cursor++];
+				tab[3] = _buffer[_cursor++];
+				tab[2] = _buffer[_cursor++];
+				tab[1] = _buffer[_cursor++];
+				tab[0] = _buffer[_cursor++];
+			}
+		}
+	}
+
+
+	void Serializer::operator >> (netU64 & val_out){
+		if(_cursor+8<=_bufferSize){
+
+			char* tab = (char*) &val_out;
+
+			if(isBigIndian())
+			{
+				tab[0] = _buffer[_cursor++];
+				tab[1] = _buffer[_cursor++];
+				tab[2] = _buffer[_cursor++];
+				tab[3] = _buffer[_cursor++];
+				tab[4] = _buffer[_cursor++];
+				tab[5] = _buffer[_cursor++];
+				tab[6] = _buffer[_cursor++];
+				tab[7] = _buffer[_cursor++];
+			}else{
+				tab[7] = _buffer[_cursor++];
+				tab[6] = _buffer[_cursor++];
+				tab[5] = _buffer[_cursor++];
+				tab[4] = _buffer[_cursor++];
 				tab[3] = _buffer[_cursor++];
 				tab[2] = _buffer[_cursor++];
 				tab[1] = _buffer[_cursor++];

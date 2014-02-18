@@ -5,26 +5,26 @@
     <ClCompile Include="Serializer.cpp" />
     <ClCompile Include="NetPeer.cpp" />
     <ClCompile Include="NetSocket.cpp" />
-    <ClCompile Include="GenericRPC.cpp" />
     <ClCompile Include="GenericRPCListener.cpp" />
     <ClCompile Include="Serializable.cpp" />
     <ClCompile Include="Msg.cpp" />
     <ClCompile Include="crc32.cpp" />
     <ClCompile Include="StringId.cpp" />
     <ClCompile Include="CommonTime.cpp" />
+    <ClCompile Include="GenericRPC.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NetworkManager.h" />
     <ClInclude Include="Serializer.h" />
     <ClInclude Include="NetPeer.h" />
     <ClInclude Include="NetSocket.h" />
-    <ClInclude Include="GenericRPC.h" />
     <ClInclude Include="GenericRPCListener.h" />
     <ClInclude Include="Serializable.h" />
     <ClInclude Include="Msg.h" />
     <ClInclude Include="StringId.h" />
     <ClInclude Include="CommonTime.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="GenericRPC.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Shared.rc" />

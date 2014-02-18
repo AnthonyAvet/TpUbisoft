@@ -2,6 +2,9 @@
 #pragma once
 
 #include "NetworkManager.h"
+#include "NetPeer.h"
+#include "Msg.h"
+#include "Serializer.h"
 
 namespace Session
 {
@@ -13,7 +16,7 @@ namespace Session
 		~SessionService();
 
 		// GenericRPCListener interface override
-		bool OnIncomingQuery(Shared::IncomingQuery& query);
+		bool OnIncomingQuery(Shared::NetPeer& from, Shared::Msg& message);
 		bool OnInit();
 		bool OnUpdate();
 		bool OnTerm();

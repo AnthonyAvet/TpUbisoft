@@ -1,6 +1,6 @@
 #pragma once
 
-#include <WinSock.h>
+#include <WinSock2.h>
 
 #include "NetPeer.h"
 #include "Msg.h"

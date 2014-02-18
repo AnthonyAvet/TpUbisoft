@@ -14,7 +14,7 @@ int main(void)
 
 	WSADATA data;
 	WSAStartup(MAKEWORD(2,2), &data);
-	
+	/*
 	/////////////////////////////////////////////////
 	// test part 1
 	/////////////////////////////////////////////////
@@ -60,6 +60,7 @@ int main(void)
 	* ser << 't';
 	* ser << 'h';
 	* ser << 'o';
+	* ser << '\0';
 
 	msg->SetBufferSize(ser->getBufferSize());
 
@@ -70,7 +71,7 @@ int main(void)
 
 	retour = sock->Read(*netIn, *msgReception);
 	printf("retour read vaut: %d\n",retour);
-	char retourChar[5];
+	char retourChar[6];
 	
 	int val=0;
 
@@ -80,6 +81,7 @@ int main(void)
 	*serRetour >> retourChar[2];
 	*serRetour >> retourChar[3];
 	*serRetour >> retourChar[4];
+	*serRetour >> retourChar[5];
 
 	printf("message : %s +  %d\n", retourChar, val);
 
@@ -102,9 +104,30 @@ int main(void)
 	*serRetour >> retourChar[2];
 	*serRetour >> retourChar[3];
 	*serRetour >> retourChar[4];
+	*serRetour >> retourChar[5];
 
 	printf("message : %s +  %d\n", retourChar, val);
-
 	system("PAUSE");
+	*/
+
+	/////////////////////////////////////////////////
+	// test part 4
+	/////////////////////////////////////////////////
+
+	/*unsigned short local_port = 8889;
+
+	Shared::NetPeer brokerPeer(INADDR_LOOPBACK, local_port);
+
+	//Broker::BrokerService brokerService(NetworkManager);
+	//networkManager.AddRPCListener(brokerService);
+
+	//networkManager.Init();
+
+	while(true)
+	{
+		//networkManager.Refresh();
+	}
+	//networkManager.Term();*/
+
 	return 0;
 }

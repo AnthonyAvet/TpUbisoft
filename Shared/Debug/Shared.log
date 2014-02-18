@@ -1,29 +1,37 @@
-﻿La génération a démarré 05/02/2014 18:48:40.
-     1>Projet "C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Shared\Shared.vcxproj" sur le nœud 2 (Build cible(s)).
+﻿La génération a démarré 18/02/2014 17:36:18.
+     1>Projet "C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Shared\Shared.vcxproj" sur le nœud 2 (Rebuild cible(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GenericRPC.cpp NetworkManager.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CommonTime.cpp crc32.cpp GenericRPC.cpp GenericRPCListener.cpp Msg.cpp NetPeer.cpp NetSocket.cpp NetworkManager.cpp Serializable.cpp Serializer.cpp StringId.cpp
+         StringId.cpp
+         Serializer.cpp
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializer.cpp(37): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializer.cpp(51): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializer.cpp(65): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializer.cpp(82): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializer.cpp(108): warning C4018: '<=' : incompatibilité signed/unsigned
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializer.cpp(115): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializer.cpp(123): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializer.cpp(130): warning C4018: '<=' : incompatibilité signed/unsigned
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializer.cpp(145): warning C4018: '<=' : incompatibilité signed/unsigned
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializer.cpp(159): warning C4018: '<=' : incompatibilité signed/unsigned
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializer.cpp(178): warning C4018: '<=' : incompatibilité signed/unsigned
+         Serializable.cpp
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializable.cpp(6): warning C4100: 'serializer' : paramètre formel non référencé
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\serializable.cpp(7): warning C4100: 'serializer' : paramètre formel non référencé
          NetworkManager.cpp
-         Génération de code en cours...
-         Ignoré... (aucune modification pertinente détectée)
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\networkmanager.h(5): fatal error C1083: Impossible d'ouvrir le fichier include : 'GenericRPC.h' : No such file or directory
+         NetSocket.cpp
+         NetPeer.cpp
+         Msg.cpp
+         GenericRPCListener.cpp
+     1>c:\users\ilustr\documents\visual studio 2012\projects\tpubisoft\shared\networkmanager.h(5): fatal error C1083: Impossible d'ouvrir le fichier include : 'GenericRPC.h' : No such file or directory
          GenericRPC.cpp
-       Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"..\bin\Win32\Debug\Shared.lib" /NOLOGO Debug\Shared.res
-         Debug\CommonTime.obj
-         Debug\crc32.obj
-         Debug\GenericRPC.obj
-         Debug\GenericRPCListener.obj
-         Debug\Msg.obj
-         Debug\NetPeer.obj
-         Debug\NetSocket.obj
-         Debug\NetworkManager.obj
-         Debug\Serializable.obj
-         Debug\Serializer.obj
-         Debug\StringId.obj
-     1>LINK : warning LNK4068: /MACHINE non spÚcifiÚá; X86 pris par dÚfaut
-     1>GenericRPC.obj : warning LNK4221: Ce fichier objet ne dÚfinit pas de symboles publics jusqu'ici non dÚfinis. Par consÚquent, il ne sera utilisÚ par aucune opÚration de lien utilisant cette bibliothÞque
-         Shared.vcxproj -> C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Shared\..\bin\Win32\Debug\Shared.lib
-     1>Génération du projet "C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Shared\Shared.vcxproj" terminée (Build cible(s)).
+     1>c1xx : fatal error C1083: Impossible d'ouvrir le fichier source : 'GenericRPC.cpp' : No such file or directory
+         crc32.cpp
+         CommonTime.cpp
+         Génération de code en cours...
+     1>Génération du projet "C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Shared\Shared.vcxproj" terminée (Rebuild cible(s)) -- ÉCHEC.
 
-La génération a réussi.
+ÉCHEC de la build.
 
-Temps écoulé 00:00:00.90
+Temps écoulé 00:00:04.66

@@ -1,4 +1,4 @@
-﻿La génération a démarré 05/02/2014 18:54:06.
+﻿La génération a démarré 18/02/2014 13:16:53.
      1>Projet "C:\Users\ilustr\Documents\Visual Studio 2012\Projects\TpUbisoft\Broker\Broker.vcxproj" sur le nœud 2 (Build cible(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\Shared /ZI /nologo /W4 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
@@ -11,4 +11,4 @@
 
 La génération a réussi.
 
-Temps écoulé 00:00:01.14
+Temps écoulé 00:00:02.05

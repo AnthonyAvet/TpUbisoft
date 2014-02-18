@@ -71,10 +71,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Shared\RegisterService.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SessionService.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Shared\RegisterService.h" />
     <ClInclude Include="SessionService.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

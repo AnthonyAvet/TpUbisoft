@@ -3,6 +3,7 @@
 
 #include "NetPeer.h"
 #include "Msg.h"
+#include "Serializable.h"
 
 namespace Shared
 {
@@ -39,9 +40,9 @@ namespace Shared
 		virtual ~GenericRPC();
 
 		// getter
-		State 	GetState() const;
-		Result	GetResult() const;
-		Error	GetError() const;
+		State 	GetState()	const	{ return this->m_eState;		};
+		Result	GetResult() const	{ return this->m_eResult;	};
+		Error	GetError()	const	{ return this->m_eError;		};
 
 		// invoke RPC
 		bool	Invoke(const char* servicename_in);
@@ -55,15 +56,18 @@ namespace Shared
 		// specified RPC to implement
 		virtual bool OnIncomingAnswer(const NetPeer& peerFrom_in, const Msg& answer_in) = 0;
 
+
 	protected:
 
 		State			m_eState;
 		Result			m_eResult;
 		Error			m_eError;
-		Shared::Msg		m_Query;
-		Shared::Msg		m_Answer;
+
+		Serializable*	m_IN;
+		Serializable*	m_OUT;
 
 		NetPeer			m_dstPeer;
+		NetworkManager  m_networkManager;
 
 		unsigned int	m_uMaxRetries;
 		unsigned int	m_uNbRetries;

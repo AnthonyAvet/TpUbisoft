@@ -1,6 +1,7 @@
 #pragma once
 
 #include "NetPeer.h"
+#include "NetworkManager.h"
 #include "Msg.h"
 
 namespace Shared
@@ -23,10 +24,14 @@ namespace Shared
 	class GenericRPCListener
 	{
 	public:
-		virtual bool OnIncomingQuery(Shared::IncomingQuery& query);
+		GenericRPCListener(NetworkManager* manager);
+		virtual bool OnIncomingQuery(NetPeer& from, Msg& message);
 		virtual bool OnInit();
 		virtual bool OnUpdate();
 		virtual bool OnTerm();
+
+	protected:
+		NetworkManager* m_NManager;
 	};
 
 } //namespace Shared
